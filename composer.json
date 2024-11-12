@@ -1,0 +1,13 @@
+{
+    "name": "hexlet/code",
+    "description": "First project on Hexlet containing 5 cli mini-games",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Egor",
+            "email": "woornir@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
