@@ -16,7 +16,7 @@
 	    "files": [
 		   "src/Cli.php",
            "src/Engine.php",
-           "src/ParityOfNumber"
+           "src/ParityOfNumber.php"
 	    ]
     },
     "require": {
