@@ -11,7 +11,8 @@
     "bin": [
 	"bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "minimum-stability": "stable",
     "autoload": {
@@ -19,7 +20,8 @@
            "src/Cli.php",
            "src/Engine.php",
            "src/Games/ParityOfNumber.php",
-           "src/Games/Calculator.php"
+           "src/Games/Calculator.php",
+           "src/Games/Gcd.php"
 	    ]
     },
     "require": {
