@@ -17,7 +17,7 @@ function getProgression($firstNumber, $difference, $length)
 {
     $question = [];
     for ($i = 0; $i < $length; $i++) {
-        $value = $firstNumber + $i * $difference; 
+        $value = $firstNumber + $i * $difference;
         $question[] = $value;
     }
     $i = rand(1, $length - 1);
@@ -29,7 +29,7 @@ function getProgression($firstNumber, $difference, $length)
 
 function playProgression()
 {
-    $callable = function() {
+    $callable = function () {
         $firstNumber = rand(2, 50);
         $difference = rand(2, 5);
         $length = rand(5, 10);
