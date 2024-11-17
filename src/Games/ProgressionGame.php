@@ -6,6 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function Php\Project\Engine\runGame;
 
+const GAME_DESCRIPTION = "What number is missing in the progression?";
 /**
  * Define function to get arythmetic progression with one empty slot which is correct answer
  */
