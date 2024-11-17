@@ -11,10 +11,10 @@ use function cli\prompt;
  */
 function runGame(string $gameDescription, callable $arrayOfVariables)
 {
-    line('Welcome to the Brain Game!'); // greetings
-    $name = prompt('May I have your name?'); // asking User's name
-    line("Hello, %s!", $name); // personal greeting
-    line($gameDescription); // displaying the game description
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?'); 
+    line("Hello, %s!", $name);
+    line($gameDescription); 
 
     /**
      * describing the main game logic
@@ -33,8 +33,8 @@ function runGame(string $gameDescription, callable $arrayOfVariables)
             line("Let's try again, $name!");
             break;
         }
+    }
         if ($roundsWon === 3) {
             line("Congratulations, %s! You won the game!", $name);
         }
-    }
 }
