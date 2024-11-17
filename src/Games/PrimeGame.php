@@ -12,7 +12,7 @@ const GAME_DESCRIPTION = "Answer \"yes\" if given number is prime. Otherwise ans
  * Realize function which checking prime number
  * and returning correct answer fo game
  */
-function isPrime($number): string
+function isPrime(int $number): string
 {
     if ($number < 2) {
         return 'yes';
