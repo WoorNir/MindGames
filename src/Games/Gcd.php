@@ -14,7 +14,7 @@ const GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
  * answer.
  */
 
-function findGcd($a, $b): string
+function findGcd(int $a, int $b): string
 {
     while ($b !== 0) {
         $temp = $b;
