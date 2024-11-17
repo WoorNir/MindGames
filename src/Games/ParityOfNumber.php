@@ -14,7 +14,7 @@ function playBrainEven()
     $callable = function () {
         $question = rand(1, 100);
         $correctAnswer = $question % 2 === 0 ? 'yes' : 'no';
-        return [$question, $correctAnswer];
+        return [$question, $correctAnswer]; // we should use exact that order in result
     };
     runGame(GAME_DESCRIPTION, $callable);
 }
