@@ -16,7 +16,7 @@
     "minimum-stability": "stable",
     "autoload": {
 	    "files": [
-		   "src/Cli.php",
+           "src/Cli.php",
            "src/Engine.php",
            "src/Games/ParityOfNumber.php",
            "src/Games/Calculator.php"
