@@ -23,7 +23,8 @@
            "src/Games/ParityOfNumber.php",
            "src/Games/Calculator.php",
            "src/Games/Gcd.php",
-           "src/Games/ProgressionGame.php"
+           "src/Games/ProgressionGame.php",
+           "src/Games/PrimeGame.php"
 	    ]
     },
     "require": {
