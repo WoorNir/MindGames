@@ -24,6 +24,8 @@ function gameCalc(int $a, int $b, string $operand): string
         case '*':
             $result = $a * $b;
             break;
+        default:
+            $result = null;
     }
     return $result;
 }
