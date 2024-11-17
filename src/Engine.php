@@ -12,9 +12,9 @@ use function cli\prompt;
 function runGame(string $gameDescription, callable $arrayOfVariables)
 {
     line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?'); 
+    $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line($gameDescription); 
+    line($gameDescription);
 
     /**
      * describing the main game logic
@@ -34,7 +34,7 @@ function runGame(string $gameDescription, callable $arrayOfVariables)
             break;
         }
     }
-        if ($roundsWon === 3) {
-            line("Congratulations, %s! You won the game!", $name);
-        }
+    if ($roundsWon === 3) {
+        line("Congratulations, %s! You won the game!", $name);
+    }
 }
