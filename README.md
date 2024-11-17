@@ -4,3 +4,4 @@
 
 **Game demos:**
 - [Brain-even](https://asciinema.org/a/lHvX4ysJLaCPeSmiAUGiljFsh)
+- [Brain-calc](https://asciinema.org/a/loXKzGKVFjnODLLgEDzGVuHoE)
