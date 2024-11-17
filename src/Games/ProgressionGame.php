@@ -2,13 +2,9 @@
 
 namespace Php\Project\Games\Progression;
 
-use const Php\Project\Games\Calc\GAME_DESCRIPTION as CalcGAME_DESCRIPTION;
-
 use function cli\line;
 use function cli\prompt;
 use function Php\Project\Engine\runGame;
-
-const GAME_DESCRIPTION = "What number is missing in the progression?";
 
 /**
  * Define function to get arythmetic progression with one empty slot which is correct answer
