@@ -1,15 +1,12 @@
 <?php
 
-namespace Php\Project\Parity;
+namespace Php\Project\Games\Parity;
 
 use function cli\line;
 use function cli\prompt;
 use function Php\Project\Engine\runGame;
 
 const GAME_DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-/**
- * Starting the game
- */
 
 function playBrainEven()
 {
