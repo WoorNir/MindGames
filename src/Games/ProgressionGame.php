@@ -10,7 +10,7 @@ const GAME_DESCRIPTION = "What number is missing in the progression?";
 /**
  * Define function to get arythmetic progression with one empty slot which is correct answer
  */
-function getProgression($firstNumber, $difference, $length)
+function getProgression(int $firstNumber, int $difference, int $length)
 {
     $question = [];
     for ($i = 0; $i < $length; $i++) {
