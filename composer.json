@@ -9,14 +9,17 @@
         }
     ],
     "bin": [
-	    "bin/brain-games"
+	    "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "minimum-stability": "stable",
     "autoload": {
 	    "files": [
 		   "src/Cli.php",
            "src/Engine.php",
-           "src/ParityOfNumber.php"
+           "src/Games/ParityOfNumber.php",
+           "src/Games/Calculator.php"
 	    ]
     },
     "require": {
