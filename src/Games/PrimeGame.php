@@ -2,34 +2,35 @@
 
 namespace Php\Project\Games\Prime;
 
-use function cli\line;
-use function cli\prompt;
 use function Php\Project\Engine\runGame;
 
-const GAME_DESCRIPTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
-
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 /**
  * Realize function which checking prime number
  * and returning correct answer fo game
  */
-function isPrime(int $number): string
+function isPrime($number): bool
 {
     if ($number < 2) {
-        return 'yes';
+        return false;
     }
     for ($i = 2; $i < $number / 2; $i++) {
         if ($number % $i === 0) {
-            return 'no';
+            return false;
         }
     }
-    return 'yes';
+    return true;
 }
 
 function playPrime()
 {
     $callable = function () {
         $question = rand(1, 100);
-        $correctAnswer = isPrime($question);
+        if (isPrime($question)) {
+            $correctAnswer = 'yes';
+        } else {
+            $correctAnswer = 'no';
+        }
         return [$question, $correctAnswer];
     };
     runGame(GAME_DESCRIPTION, $callable);
