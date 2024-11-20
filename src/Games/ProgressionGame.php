@@ -20,7 +20,7 @@ function playProgression()
 /**
  * Define function to get arythmetic progression with one empty slot
  */
-function getProgression($firstNumber, $difference, $length): array
+function getProgression(int $firstNumber, int $difference, int $length): array
 {
     $gameProgression = [];
     for ($i = 0; $i < $length; $i++) {

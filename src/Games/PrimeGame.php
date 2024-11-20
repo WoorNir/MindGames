@@ -23,7 +23,7 @@ function playPrime()
  * Realize function which checking prime number
  * and returning correct answer fo game
  */
-function isPrime($number): bool
+function isPrime(int $number): bool
 {
     if ($number < 2) {
         return false;

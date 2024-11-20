@@ -23,7 +23,7 @@ function playGcd()
  * of two numbers. We'll need it in our next function to get correct
  * answer.
  */
-function findGcd($firstNumber, $secondNumber): string
+function findGcd(int $firstNumber, int $secondNumber): string
 {
     while ($secondNumber !== 0) {
         $temp = $secondNumber;
