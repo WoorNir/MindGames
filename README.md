@@ -1,5 +1,5 @@
 # My first project on Hexlet
-
+Five mini-games with command line interface
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/WoorNir/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/WoorNir/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/57f83923c693c4916f0c/maintainability)](https://codeclimate.com/github/WoorNir/php-project-45/maintainability)
@@ -10,3 +10,14 @@
 - [Brain-gcd](https://asciinema.org/a/PPph11zBc16Wa5mNT7jC42bqB)
 - [Brain-progression](https://asciinema.org/a/pcqJ64Op1l3pgIXEQ03LQ2yHF)
 - [Brain-prime](https://asciinema.org/a/jRv5ugcVF2Awz7l1XdgxeLqP2)
+
+### Install
+Requires PHP 8.3.6 
+```
+git clone 
+
+cd php-project-45
+
+make install
+
+```
