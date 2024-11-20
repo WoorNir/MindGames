@@ -13,7 +13,7 @@ const ROUNDS_REQUIRED = 3;
 function runGame(string $gameDescription, callable $arrayOfVariables)
 {
     $name = greeting(); // Welcome user and ask his/her/etc. name
-    line($gameDescription); 
+    line($gameDescription);
     /**
      * describing the main game logic
      */
