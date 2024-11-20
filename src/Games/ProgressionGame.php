@@ -18,18 +18,18 @@ function playProgression()
     runGame(GAME_DESCRIPTION, $callable);
 }
 /**
- * Define function to get arythmetic progression with one empty slot which is correct answer
+ * Define function to get arythmetic progression with one empty slot
  */
 function getProgression($firstNumber, $difference, $length): array
 {
-    $question = [];
+    $gameProgression = [];
     for ($i = 0; $i < $length; $i++) {
         $value = $firstNumber + $i * $difference;
-        $question[] = $value;
+        $gameProgression[] = $value;
     }
-    $i = rand(1, $length - 1);
-    $correctAnswer = strval($question[$i]);
-    $question[$i] = "..";
-    $question = implode(" ", $question);
-    return [$question, $correctAnswer];
+    $i = rand(1, $length - 1); // Index for missing number in progression
+    $missingNumber = strval($gameProgression[$i]);
+    $gameProgression[$i] = "..";
+    $gameProgression = implode(" ", $gameProgression);
+    return [$gameProgression, $missingNumber];
 }
