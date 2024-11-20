@@ -14,7 +14,7 @@ Five mini-games with command line interface
 ### Install
 Requires PHP 8.3.6 
 ```
-git clone 
+git clone https://github.com/WoorNir/php-project-45.git
 
 cd php-project-45
 
