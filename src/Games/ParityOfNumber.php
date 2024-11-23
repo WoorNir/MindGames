@@ -11,7 +11,7 @@ function playBrainEven(): void
     // initialize function to get gaming question and correct answer
     $callable = function (): array {
         $question = rand(1, 100);
-        isEven($question) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
+        $correctAnswer = isEven($question) ? 'yes' : 'no';
         return [$question, $correctAnswer]; // we should use exact that order in result
     };
 

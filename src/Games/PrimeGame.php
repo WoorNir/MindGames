@@ -10,7 +10,7 @@ function playPrime(): void
 {
     $callable = function (): array {
         $question = rand(1, 100);
-        isPrime($question) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
+        $correctAnswer = isPrime($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];
     };
 
