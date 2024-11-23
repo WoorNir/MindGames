@@ -10,9 +10,11 @@ const ROUNDS_REQUIRED = 3;
  * Function to start the game
  * contain 2 parameters: game rules, and function to get needed variables of question and correct answer
  */
-function runGame(string $gameDescription, callable $arrayOfVariables)
+function runGame(string $gameDescription, callable $arrayOfVariables): void
 {
-    $name = greeting(); // Welcome user and ask his/her/etc. name
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line($gameDescription);
     /**
      * describing the main game logic
@@ -21,6 +23,7 @@ function runGame(string $gameDescription, callable $arrayOfVariables)
         [$question, $correctAnswer] = $arrayOfVariables();
         line("Question: %s", $question); // asking User
         $answer = trim(strtolower(prompt("Your answer")));
+
         if ($answer === $correctAnswer) {
             line("Correct!");
         } else {
@@ -29,13 +32,6 @@ function runGame(string $gameDescription, callable $arrayOfVariables)
             return;
         }
     }
-    line("Congratulations, %s! You won the game!", $name);
-}
 
-function greeting()
-{
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    return $name;
+    line("Congratulations, %s! You won the game!", $name);
 }

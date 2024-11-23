@@ -6,17 +6,14 @@ use function Php\Project\Engine\runGame;
 
 const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function playPrime()
+function playPrime(): void
 {
-    $callable = function () {
+    $callable = function(): array {
         $question = rand(1, 100);
-        if (isPrime($question)) {
-            $correctAnswer = 'yes';
-        } else {
-            $correctAnswer = 'no';
-        }
+        isPrime($question) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
         return [$question, $correctAnswer];
     };
+    
     runGame(GAME_DESCRIPTION, $callable);
 }
 /**

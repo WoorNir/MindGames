@@ -6,16 +6,17 @@ use function Php\Project\Engine\runGame;
 
 const GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
-function playGcd()
+function playGcd(): void
 {
     // getting variables for gaming question and correct answer
-    $callable = function () {
-        $firstQuestionNumber = rand(1, 100);
-        $secondQuestionNumber = rand(1, 100);
+    $callable = function(): array {
+        $firstQuestionNumber = rand(1, 50);
+        $secondQuestionNumber = rand(1, 50);
         $question = "{$firstQuestionNumber} {$secondQuestionNumber}";
         $correctAnswer = findGcd($firstQuestionNumber, $secondQuestionNumber);
         return [$question, $correctAnswer];
     };
+    
         runGame(GAME_DESCRIPTION, $callable);
 }
 /**
