@@ -8,14 +8,14 @@ const GAME_DESCRIPTION = "What number is missing in the progression?";
 
 function playProgression(): void
 {
-    $callable = function(): array {
+    $callable = function (): array {
         $firstNumber = rand(2, 50);
         $difference = rand(2, 5);
         $length = rand(5, 10);
-        [$question, $correctAnswer] = getProgression($firstNumber, $difference, $length);    
+        [$question, $correctAnswer] = getProgression($firstNumber, $difference, $length);
         return [$question, $correctAnswer];
     };
-    
+
     runGame(GAME_DESCRIPTION, $callable);
 }
 /**

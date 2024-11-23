@@ -9,12 +9,12 @@ const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "
 function playBrainEven(): void
 {
     // initialize function to get gaming question and correct answer
-    $callable = function(): array {
+    $callable = function (): array {
         $question = rand(1, 100);
         isEven($question) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
         return [$question, $correctAnswer]; // we should use exact that order in result
     };
-    
+
     runGame(GAME_DESCRIPTION, $callable);
 }
 

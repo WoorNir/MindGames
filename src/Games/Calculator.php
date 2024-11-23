@@ -9,7 +9,7 @@ const GAME_DESCRIPTION = "What is the result of the expression?";
 function playGameCalc(): void
 {
     // getting needed variables
-    $callable = function(): array {
+    $callable = function (): array {
         $possibleActions = ['+', '-', '*'];    // Possible operations in game
         $operandIndex = rand(0, 2);
         $currentAction = $possibleActions[$operandIndex]; //Choosing current action randomly
@@ -21,7 +21,7 @@ function playGameCalc(): void
         $correctAnswer = calculate($firstQuestionNum, $secondQuestionNum, $currentAction);
         return [$question, $correctAnswer]; //order is matter
     };
-    
+
     runGame(GAME_DESCRIPTION, $callable);
 }
 /**
