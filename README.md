@@ -14,9 +14,9 @@ Five mini-games with command line interface
 ### Install
 Requires PHP 8.3.6 
 ```
-git clone https://github.com/WoorNir/php-project-45.git
+git clone https://github.com/WoorNir/MindGames.git
 
-cd php-project-45
+cd MindGames
 
 make install
 
